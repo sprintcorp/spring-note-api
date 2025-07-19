@@ -11,8 +11,8 @@ import java.util.Date;
 
 @Service
 public class JwtService {
-    private static final String SECRET = "YourSecretKeyShouldBeLongEnoughForHS256"; // Use env var in production
-    private static final long EXPIRATION = 1000 * 60 * 60; // 1 hour
+    private static final String SECRET = "secret";
+    private static final long EXPIRATION = 1000 * 60 * 60;
 
     private final Key key = Keys.hmacShaKeyFor(SECRET.getBytes());
 

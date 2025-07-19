@@ -83,6 +83,5 @@ public class AuthService {
         user.setLastName(profileUpdateDTO.getLastName());
 
         return authRepository.save(user);
-//        return updated;
     }
 }
